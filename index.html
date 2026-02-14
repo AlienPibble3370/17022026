@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Bức thư từ Alien Pibble</title>
+<title>Bức Thư Của Alien Pibble</title>
 <style>
     body {
         margin: 0;
@@ -22,7 +22,7 @@
         width: 60%;
         max-width: 800px;
         padding: 50px;
-        background: rgba(255, 248, 220, 0.9);
+        background: rgba(255, 248, 220, 0.92);
         box-shadow: 0 0 50px rgba(0,0,0,0.4);
         border-radius: 5px;
         line-height: 1.8;
@@ -61,54 +61,44 @@
 <body>
 
 <div class="letter">
-    <p>
-        Guv yn Nyvra Cvoolr, zbv atubv qra gh una gvau kn kbv.
-        Puhat gbv qn cung qbat zbv phbp puvra yvra fnb in pnp puvra qvpu gna pbat pubc aubnat.
-        Eng aubru qbat qbv phn gbv qn uv fva, auat puat gbv qn qnau pncc qhbp zbv gnv yvru dhna gbat.
-        Gevat qb, gbv qn gurl qhbp xub onh qn ov auat xr pna dhlera na tvnh,
-        puat xubat zhbz ov cung uvr a.
-        Puhat fr xubat yhbhat gubp qhbp, ghl inl, xun anat gbv ov ong fr eng yba.
-        Gbv zhbz pnp ona gvz ab pub tvhc gbv in auat atubv nau rz phn gbv.
+<p>
+Guv yn Nyvra Cvoolr, zbv atubv qra gh una gvau kn kbv.
+Pu<span class="highlight">Q</span>hat gbv qn cung qbat zbv phbp puvra yvra fnb in pnp puvra qvpu gna pbat pubc aubnat.
+Eng aubru qbat qb<span class="highlight">h</span>v phn gbv qn uv fva, auat puat gbv qn qnau pncc qhbp zbv gnv yvru dhna gbat.
+Geva<span class="highlight">a</span>t qb, gbv qn gurl qhbp xub onh qn ov auat xr pna dhlera na tvnh,
+puat xubat zhb<span class="highlight">t</span>z ov cung uvr a.
+Puhat fr xuba<span class="highlight">g</span>t yhbhat gubp qhbp, ghl inl,
+xun ana<span class="highlight">v</span>t gbv ov ong fr eng yba.
+Gb<span class="highlight">a</span>v zhbz pnp ona gvz ab pub tvhc gbv in auat atubv nau rz phn gbv.
+Puhat fr xubat yhbhat gubp qhbp ghl inl xun anat gbv ov ong fr en<span class="highlight">Q</span>g yba.
+Gevat qb gbv qn gurl qhbp xub onh qn ov auat xr pna dhlera na tvn<span class="highlight">n</span>h.
+Puhat fr xubat yhbhat gubp qhbp ghl inl xun anat gbv ov ong fr eng l<span class="highlight">a</span>.
+Gevat qb gbv qn gurl qhbp xub onh qn ov auat xr pna dhlera na tvn<span class="highlight">g</span>h.
+Pu<span class="highlight">r</span>hat fr xubat yhbhat gubp qhbp.
+</p>
 
-        <br><br>
-
-        <!-- Chèn chữ cái theo đúng thứ tự -->
-        <span class="highlight">Q</span>
-        <span class="highlight">h</span>
-        <span class="highlight">a</span>
-        <span class="highlight">t</span>
-        <span class="highlight">g</span>
-        <span class="highlight">v</span>
-        <span class="highlight">a</span>
-        <span class="highlight">Q</span>
-        <span class="highlight">n</span>
-        <span class="highlight">a</span>
-        <span class="highlight">g</span>
-        <span class="highlight">r</span>
-    </p>
-
-    <div class="password-box">
-        <input type="text" id="password" placeholder="Nhập mật khẩu...">
-        <button onclick="checkPassword()">Mở khóa</button>
-        <div id="result"></div>
-    </div>
+<div class="password-box">
+    <input type="text" id="password" placeholder="Nhập mật khẩu...">
+    <button onclick="checkPassword()">Mở khóa</button>
+    <div id="result"></div>
+</div>
 </div>
 
 <script>
-    const correctPassword = "QhatgvaQnagr";
+const correctPassword = "DungtinDante";
 
-    function checkPassword() {
-        const input = document.getElementById("password").value;
-        const result = document.getElementById("result");
+function checkPassword() {
+    const input = document.getElementById("password").value;
+    const result = document.getElementById("result");
 
-        if (input === correctPassword) {
-            result.innerHTML = '<a href="https://yourlinkhere.com" target="_blank">Cánh cửa đã mở</a>';
-            result.style.color = "green";
-        } else {
-            result.textContent = "Sai mật khẩu.";
-            result.style.color = "darkred";
-        }
+    if (input === correctPassword) {
+        result.innerHTML = '<a href="https://yourlinkhere.com" target="_blank">Cánh cửa đã mở</a>';
+        result.style.color = "green";
+    } else {
+        result.textContent = "Sai mật khẩu.";
+        result.style.color = "darkred";
     }
+}
 </script>
 
 </body>
