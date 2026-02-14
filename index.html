@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Thư Cổ</title>
+<title>Bức thư từ Alien Pibble</title>
 <style>
     body {
         margin: 0;
@@ -61,8 +61,30 @@
 <body>
 
 <div class="letter">
-    <p id="content">
-        Guv yn Nyvra Cvoolr, zbv atubv qra gh una gvau kn kbv. Puhat gbv qn cung qbat zbv phbp puvra yvra fnb in pnp puvra qvpu gna pbat pubc aubnat. Eng aubru qbat qbv phn gbv qn uv fva, auat puat gbv qn qnau pncc qhbp zbv gnv yvru dhna gbat. Gevat qb, gbv qn gurl qhbp xub onh qn ov auat xr pna dhlera na tvnh, puat xubat zhbz ov cung uvr a. Puhat fr xubat yhbhat gubp qhbp, ghl inl, xun anat gbv ov ong fr eng yba. Gbv zhbz pnp ona gvz ab pub tvhc gbv in auat atubv nau rz phn gbv.
+    <p>
+        Guv yn Nyvra Cvoolr, zbv atubv qra gh una gvau kn kbv.
+        Puhat gbv qn cung qbat zbv phbp puvra yvra fnb in pnp puvra qvpu gna pbat pubc aubnat.
+        Eng aubru qbat qbv phn gbv qn uv fva, auat puat gbv qn qnau pncc qhbp zbv gnv yvru dhna gbat.
+        Gevat qb, gbv qn gurl qhbp xub onh qn ov auat xr pna dhlera na tvnh,
+        puat xubat zhbz ov cung uvr a.
+        Puhat fr xubat yhbhat gubp qhbp, ghl inl, xun anat gbv ov ong fr eng yba.
+        Gbv zhbz pnp ona gvz ab pub tvhc gbv in auat atubv nau rz phn gbv.
+
+        <br><br>
+
+        <!-- Chèn chữ cái theo đúng thứ tự -->
+        <span class="highlight">Q</span>
+        <span class="highlight">h</span>
+        <span class="highlight">a</span>
+        <span class="highlight">t</span>
+        <span class="highlight">g</span>
+        <span class="highlight">v</span>
+        <span class="highlight">a</span>
+        <span class="highlight">Q</span>
+        <span class="highlight">n</span>
+        <span class="highlight">a</span>
+        <span class="highlight">g</span>
+        <span class="highlight">r</span>
     </p>
 
     <div class="password-box">
@@ -74,16 +96,6 @@
 
 <script>
     const correctPassword = "QhatgvaQnagr";
-
-    function highlightText() {
-        const content = document.getElementById("content");
-        let text = content.innerHTML;
-        const keyword = correctPassword;
-        const regex = new RegExp(keyword, "g");
-        content.innerHTML = text.replace(regex, `<span class="highlight">${keyword}</span>`);
-    }
-
-    highlightText();
 
     function checkPassword() {
         const input = document.getElementById("password").value;
